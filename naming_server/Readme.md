@@ -100,22 +100,7 @@ This repository contains the source code for a Network File System (NFS) impleme
 ## Features
 
 ### The Naming Server (NMS)
-Naming Server
-The Naming Server(NS) servers as the central hub between the clients and the Storage servers. This is the central hub of file sharing and management for the clients to communicate with. The NS has the following key features:
-
-It acts as an address resolver for clients to perform operations like Read,Write,Retrieve Info on the files in the storage server. It resolves the IP address and port number of the storage server for the client to communicate.
-It allows the operation of privileged operations like Creating , Deleting and Copying Folders among storage servers by directly sending requests to the Storage Servers.
-It ensures data redundancy and reliability of information by creating backups of all the information present in the storage servers and updating the backups continously.
-It supports multi-client operation ie can cater to multiple client requests concurrently.
-
-### Storage Server
-The Storage Servers (SS) acts as the data stores In our distributed file system implementation in C, Storage Servers play a pivotal role as the backbone of the Network File System (NFS). These servers shoulder the critical responsibility of handling the physical storage and retrieval of files and folders within the network. Tasked with the management of data persistence, Storage Servers ensure that files are stored securely and efficiently, forming the bedrock of reliable file storage and access. By distributing data across multiple servers, our system aims to enhance performance, scalability, and fault tolerance, contributing to a robust and seamless file management experience for clients connected to the network. The Storage Servers, in essence, act as the guardians of data integrity, facilitating a distributed and resilient file storage infrastructure.
-### Client
-The client serves as a user interface to communicate with the Network File System, offering several essential functionalities:
-
-Users can initiate a variety of requests such as Read, Write, Append, and more.
-Robust error handling mechanisms are implemented on the client side.
-The Network File System supports concurrent usage by multiple clients.
+The Naming Server (NS) autonomously issues commands to the connected Storage Server (SS) for priority-based operations (create, delete, and copy files) without direct client-to-SS connections.
 
 ### Multiple Clients Handling:
 
