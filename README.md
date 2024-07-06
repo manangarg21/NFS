@@ -146,11 +146,6 @@ Implement a caching mechanism based on the Least Recently Used (LRU) policy to e
 Enhance file lookup performance with a trie-based searching mechanism. This feature optimizes the process of locating files and directories within the NFS system, providing efficient and fast search operations. Tries are utilized to organize and index the file paths, resulting in a structured and scalable approach to handling large directory structures. The trie-based searching
 
 
-## Conclusion
-
-This NFS project represents a robust and feature-rich distributed file system designed to facilitate seamless file sharing and access in a networked environment. With advanced features such as concurrency, dynamic scaling, caching, efficient searching, security measures, and redundancy, the system is geared towards providing a reliable and efficient file management solution.
-
-The implementation supports both non-priority and priority-based operations, allowing users to read, write, create, delete, and copy files with ease. The system's capability to handle multiple clients concurrently ensures efficient file access, while the redundancy mechanism adds an extra layer of reliability by maintaining copies of files across multiple storage servers.
 
 
 
